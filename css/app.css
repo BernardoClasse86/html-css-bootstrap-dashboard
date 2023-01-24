@@ -4,6 +4,8 @@
     --nav-icons-color: #5B5858;
     --bell-icon-color: #FF8F00;
     --sidebar-bg: #051E34;
+    --main-open-bg: #1B72E8;
+    --main-badge-bg: #165BBA;
 }
 
 * {
@@ -148,7 +150,54 @@ input {
 
 /*** MAIN CONTENT ***/
 
+/* MAIN OPEN */
 
+.main-open {
+    background-color: var(--main-open-bg);
+    padding: 1.5rem 0;
+    color: white;
+}
+
+.row-gap {
+    row-gap: 1.75rem;
+}
+
+.my-open-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+.my-open-col {
+    flex-basis: auto;
+}
+
+.open-title {
+    font-size: 1.75rem;
+}
+
+.open-badge {
+    font-size: 0.75rem;
+    background-color: var(--main-badge-bg) !important;
+}
+
+.badge-lg {
+    display: none;
+}
+
+.online-count {
+    font-size: 1.5rem;
+}
+
+.top-mobile {
+    order: -1;
+}
+
+.btn-primary {
+    border: 1px solid white;
+}
+
+/* /MAIN OPEN */
 
 /*** /MAIN CONTENT ***/
 
@@ -158,7 +207,14 @@ input {
 
 /************ MEDIA QUERY ************/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
+
+    .top-mobile {
+        order: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
 
     .logo-thumb-lg {
         display: block;
@@ -180,4 +236,21 @@ input {
     .my-text-lg {
         display: block;
     }
+
+    .new-student-row {
+        justify-content: flex-end;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .badge-sm {
+        display: none;
+    }
+
+    .badge-lg {
+        display: inline;
+    }
+
 }
