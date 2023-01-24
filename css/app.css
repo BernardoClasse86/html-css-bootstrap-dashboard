@@ -197,6 +197,20 @@ input {
     border: 1px solid white;
 }
 
+/* CANVAS */
+
+.offcanvas {
+    --bs-offcanvas-width: min(100vw, 100%) !important;
+}
+
+.canvas-row-gap {
+    row-gap: 1rem;
+}
+
+.canvas-text-style {
+    font-weight: bold;
+}
+
 /* /MAIN OPEN */
 
 /*** /MAIN CONTENT ***/
@@ -207,7 +221,7 @@ input {
 
 /************ MEDIA QUERY ************/
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
 
     .top-mobile {
         order: 0;
@@ -251,6 +265,10 @@ input {
 
     .badge-lg {
         display: inline;
+    }
+
+    .offcanvas {
+        --bs-offcanvas-width: min(95vw, 50rem) !important;
     }
 
 }
