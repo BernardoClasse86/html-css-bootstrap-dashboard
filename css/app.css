@@ -3,6 +3,7 @@
     --search-bar: #E5E5E5;
     --nav-icons-color: #5B5858;
     --bell-icon-color: #FF8F00;
+    --sidebar-bg: #051E34;
 }
 
 * {
@@ -71,6 +72,7 @@ input {
     flex-grow: 1;
     background-color: var(--search-bar);
     border-radius: 5px;
+    margin: 0 1rem;
 }
 
 .nav-search {
@@ -96,10 +98,14 @@ input {
 /****** MAIN-AREA ******/
 
 .sidebar {
-    flex-basis: 230px;
+    flex-basis: 4.25rem;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    padding: 2rem 1.25rem;
+    color: white;
+    background-color: var(--sidebar-bg);
+    background-image: url(../img/sidebar-bg.png);
 }
 
 .main-content {
@@ -109,7 +115,34 @@ input {
 
 /*** SIDEBAR ***/
 
+.my-sidebar-row {
+    display: flex;
+    flex-direction: column;
+}
 
+.my-sidebar-col {
+    display: contents;
+}
+
+.my-sidebar-item {
+    display: flex;
+    gap: 1.25rem;
+    transition: 0.3s;
+    padding: 0.5rem 0;
+}
+
+.my-sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+}
+
+.my-text-lg {
+    display: none;
+}
+
+.my-sidebar-col .last {
+    display: flex;
+    margin-top: auto;
+}
 
 /*** /SIDEBAR ***/
 
@@ -136,6 +169,15 @@ input {
     }
 
     .nav-icons-lg {
+        display: block;
+    }
+
+    .sidebar {
+        flex-basis: 9.375rem;
+        padding: 2rem 1.25rem;
+    }
+
+    .my-text-lg {
         display: block;
     }
 }
