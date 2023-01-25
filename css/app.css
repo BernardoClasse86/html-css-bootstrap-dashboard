@@ -95,6 +95,15 @@ input {
     color: var(--bell-icon-color);
 }
 
+.btn-secondary {
+    background-color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+}
+
 /****** /NAV HEADER ******/
 
 /****** MAIN-AREA ******/
