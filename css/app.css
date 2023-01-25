@@ -110,7 +110,7 @@ input {
     background-image: url(../img/sidebar-bg.png);
 }
 
-.main-content {
+.main-section {
     flex-grow: 1;
     overflow: auto;
 }
@@ -148,7 +148,7 @@ input {
 
 /*** /SIDEBAR ***/
 
-/*** MAIN CONTENT ***/
+/*** MAIN SECTION ***/
 
 /* MAIN OPEN */
 
@@ -213,7 +213,27 @@ input {
 
 /* /MAIN OPEN */
 
-/*** /MAIN CONTENT ***/
+/* MAIN CONTENT */
+
+.main-content {
+    padding: 1.5rem 0;
+}
+
+.main-content-row-gap {
+    row-gap: 1rem;
+}
+
+.avatar-thumb {
+    width: 1.875rem;
+}
+
+.my-outer-card {
+    padding: 1rem;
+}
+
+/* /MAIN CONTENT */
+
+/*** /MAIN SECTION ***/
 
 /****** /MAIN AREA ******/
 
