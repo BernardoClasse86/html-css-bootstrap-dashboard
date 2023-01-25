@@ -232,6 +232,48 @@ input {
     font-weight: bold;
 }
 
+.my-table-head {
+    flex-basis: calc(100% * (5/12));
+}
+
+.table-my-col {
+    flex-basis: calc(100% *(5/12));
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.table-my-col-1 {
+    flex-basis: calc(100% * (3/12));
+    text-align: center;
+}
+
+.table-my-col-2 {
+    flex-basis: calc(100% * (4/12));
+    text-align: center;
+}
+
+.table-my-col-2.actions {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+}
+
+.my-table-text {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.my-table-button {
+    font-size: 0.75rem;
+    padding: 0 0.25rem;
+    color: white;
+}
+
+.xl-show {
+    display: none;
+}
+
 .accordion-title {
     text-transform: uppercase;
 }
@@ -242,6 +284,7 @@ input {
 
 .check-label-text {
     font-weight: bold;
+    font-size: 0.75rem;
 }
 
 .my-outer-card {
@@ -252,6 +295,8 @@ input {
     color: cornflowerblue;
     text-decoration: underline;
 }
+
+
 
 /* /MAIN CONTENT */
 
@@ -297,6 +342,26 @@ input {
         justify-content: flex-end;
     }
 
+    .my-table-head {
+        flex-basis: calc(100% * (6/12));
+    }
+    
+    .table-my-col {
+        flex-basis: calc(100% *(6/12));
+    }
+
+    .table-my-col-1 {
+        flex-basis: calc(100% * (2/12));
+    }
+
+    .table-my-col-2 {
+        flex-basis: calc(100% * (3/12));
+    }
+
+    .xl-show {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -311,6 +376,14 @@ input {
 
     .offcanvas {
         --bs-offcanvas-width: min(95vw, 50rem) !important;
+    }
+
+    .table-my-col-1 {
+        flex-basis: calc(100% * (1/12));
+    }
+
+    .table-my-col-2 {
+        flex-basis: calc(100% * (2/12));
     }
 
 }
