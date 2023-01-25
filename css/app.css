@@ -227,8 +227,30 @@ input {
     width: 1.875rem;
 }
 
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.accordion-title {
+    text-transform: uppercase;
+}
+
+.my-accordion-item {
+    font-weight: bold;
+}
+
+.check-label-text {
+    font-weight: bold;
+}
+
 .my-outer-card {
     padding: 1rem;
+}
+
+.my-link {
+    color: cornflowerblue;
+    text-decoration: underline;
 }
 
 /* /MAIN CONTENT */
